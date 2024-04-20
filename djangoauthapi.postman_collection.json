@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "53f2a026-94f6-4615-882f-f9e0d3134627",
+		"name": "djangoauthapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32481267"
+	},
+	"item": [
+		{
+			"name": "test",
+			"item": [
+				{
+					"name": "user reg..",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "3363anuj@gg.com",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "anuj5t3",
+									"type": "text"
+								},
+								{
+									"key": "tc",
+									"value": "True",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345676774t3",
+									"type": "text"
+								},
+								{
+									"key": "password2",
+									"value": "12345676774t3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "33anuj@gg.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345676774",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/login/?",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"login",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "errors",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"register",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMzUyMTQ5MywiaWF0IjoxNzEzNDM1MDkzLCJqdGkiOiJmYTNlYmJjOWM0ZTE0MGMxOWJiZDZhOGFjOTdlYjIwNSIsInVzZXJfaWQiOjN9.hZmIRcgsRLoPUktpJjZqf1j7eIwjXh4PY5BFsxw1Kew",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/profile/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change_pass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNDM4MTY0LCJpYXQiOjE3MTM0MzY2NjQsImp0aSI6IjNmNTE2NmI5OTBmNjRiZjA5ODM2Mjg0MjM3ZGVmNzhmIiwidXNlcl9pZCI6M30.kdYHOxqa17Wkv7d7zPdA8LdYreU0ClEKv7LLnzWfehE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "9turiiurr12345676774",
+									"type": "text"
+								},
+								{
+									"key": "password2",
+									"value": "9turiiurr12345676774",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/chagepassword/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"chagepassword",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rest-pass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "3363anuj@gg.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/send-reset-email/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"send-reset-email",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-pass",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "1234567yy",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password2",
+									"value": "1234567yyy",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/reset-password/NQ/c5scig-0859bcd06b7fb8fe6e41eff01ddfffa2/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"reset-password",
+								"NQ",
+								"c5scig-0859bcd06b7fb8fe6e41eff01ddfffa2",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
